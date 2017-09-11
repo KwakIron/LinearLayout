@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <LinearLayout
+        //orientiation의 vertical 속성의 layout_weight속성 알아보기(주의사항은 layout_with속성을 0dp로)
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_weight="1"
@@ -40,14 +40,14 @@
                 android:background="@android:color/holo_blue_bright"
                 android:text="Three" />
         </LinearLayout>
-
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="50dp"
             android:layout_weight="1"
             android:orientation="vertical">
-
+            
             <TextView
                 android:id="@+id/four"
                 android:layout_width="match_parent"
@@ -87,8 +87,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="전화번호" />
-
-            <view
+            //view로 검은색의 밑줄 글여주기
+            <view
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:background="@android:color/background_dark" />
@@ -107,6 +107,7 @@
                 android:layout_weight="2"
                 android:gravity="right"
                 android:orientation="horizontal">
+               //gravity로 버튼을 오른쪽에 보이기
 
                 <Button
                     android:id="@+id/button2"
